@@ -50,7 +50,3 @@ for(let indice = 0; indice < frutas.length; indice ++){
         console.log("Eu gosto de " + frutas[indice]);
     }
 }
-
-
-
-
