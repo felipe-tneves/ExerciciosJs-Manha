@@ -1,4 +1,9 @@
-// Hoisting
+// Hoisting -> Usa funções(functions) e variaveis (var), antes
+// da declaração
+
+// Declaracao da função -> Você "ensina" o computador à realizar
+// o quee está dentro da função  
+
 function saudacao() {    
     let nomePessoa = prompt("Digite seu nome: ")
 
@@ -13,7 +18,9 @@ function saudacao() {
     }    
 }
 
-// saudacao()
+// Chamada da função -> Pedindo para o computador realizar as 
+// tarefas que voce ensinou
+saudacao()
 
 function somar(num1, num2, num3) {
     let soma = num1 + num2 + num3
@@ -34,10 +41,46 @@ function somar(num1, num2, num3) {
 
 // Exemplo objeto
 
-let professor = {}
+let professor = {
+    nome: "Thiago",
+    sobrenome: "Nascimento",
+    idade: 26
+}
 
-professor.nome = prompt("Digite o nome: ")
-professor.sobrenome = prompt("Digite o sobrenome: ")
-professor.idade = parseInt(prompt("Digite o idade: "))
+let aluno = {
+    nome: "Vanessa",
+    nomeComposto: "Byork",
+    idade: 24
+}
 
-console.log(professor);
+let aluno2 = {
+    nome: "Eduardo",
+    sobrenome: "Audi",
+    idade: "25+"
+}
+let aluno3 = {
+    nome: "Eduardo",
+    sobrenome: "Pereira",
+    idade: "25+"
+}
+
+let produto = {
+    nome: "Controle Remoto",
+    marca: "Philco",
+    modelo: "XRCTFG-456",
+    preco: 30.0
+}
+
+
+
+console.log("Antes do desconto: " + produto.preco);
+
+produto.preco = 20
+
+console.log("Depois do desconto: " + produto.preco);
+
+// professor.nome = prompt("Digite o nome: ")
+// professor.sobrenome = prompt("Digite o sobrenome: ")
+// professor.idade = parseInt(prompt("Digite o idade: "))
+
+// console.log(professor);
