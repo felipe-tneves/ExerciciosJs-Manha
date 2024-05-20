@@ -48,6 +48,14 @@ const adicionarItem = () => {
     lista.appendChild(novoItem);
 }
 
+const voltarPagina = () =>{
+    window.history.back()
+}
+
+const fecharPagina = () => {
+    window.close()
+}
+
 
 
 
